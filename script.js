@@ -1,7 +1,7 @@
 var apiKey= "79bacef9311082ecf6542c737b74c55f";
 
 
-          event.preventDefault();
+        //   event.preventDefault();
   //btn function      
 
 
@@ -11,7 +11,7 @@ var userInput= "";
 function postWeather(){
 
 //query urls for current weather
-    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + userInput + apiKey;
+    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=79bacef9311082ecf6542c737b74c55f" + userInput + apiKey;
 //ajax call for currrent  weather
     $.ajax({
         url: queryURL,
@@ -60,7 +60,7 @@ function postWeather(){
 
     //         var lat = response.coord.lat;
      
-    //         var uvIndex = "http://api.openweathermap.org/data/2.5/uvi?&lat=" + lat + "&lon=" + lng + apiKey;
+    //         var uvIndex = "http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=79bacef9311082ecf6542c737b74c55f" + lat + "&lon=" + lng + apiKey;
     //    //closes ajx call for uv
     //     })
         
@@ -71,7 +71,7 @@ function postWeather(){
 
 //ajax call for forecast
 // var fiveDay =
-//     "https://api.openweathermap.org/data/2.5/forecast?q=" +
+//     "http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=79bacef9311082ecf6542c737b74c55f" +
 //     userInput +
 //     "&appid=" +
 //     apiKey;
